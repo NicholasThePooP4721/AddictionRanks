@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AddictionRanks</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>AddictionRanks</h1>
+        <p class="subtitle">Simple Rankings für Alkohol, Rauchen, Screentime und Glücksspiel.</p>
+        <nav class="nav-links">
+          <a href="index.html" aria-current="page">Leaderboard</a>
+          <a href="forum.html">Forum</a>
+        </nav>
+      </header>
+
+      <section class="card" id="auth-card">
+        <h2>Login (Code basiert)</h2>
+        <p class="hint">Erzeuge einen kurzen Code und ergänze dein Mini-Profil.</p>
+
+        <div id="auth-logged-out">
+          <button type="button" id="generate-code">Zufälligen Code erstellen</button>
+          <p class="generated-code" id="generated-code"></p>
+          <form id="activate-code-form" class="inline-form">
+            <label>
+              Code
+              <input type="text" id="login-code" maxlength="8" required />
+            </label>
+            <label>
+              Anzeigename
+              <input type="text" id="profile-name" maxlength="24" required />
+            </label>
+            <label>
+              Über mich
+              <input type="text" id="profile-about" maxlength="80" placeholder="z. B. 22, Berlin" />
+            </label>
+            <button type="submit">Einloggen</button>
+          </form>
+        </div>
+
+        <div id="auth-logged-in" hidden>
+          <p><strong>Code:</strong> <span id="session-code"></span></p>
+          <p><strong>Name:</strong> <span id="session-name"></span></p>
+          <p><strong>Profil:</strong> <span id="session-about"></span></p>
+          <button type="button" id="logout">Ausloggen</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Eintrag hinzufügen</h2>
+        <form id="entry-form">
+          <label>
+            Username (für diesen Post)
+            <input type="text" id="username" maxlength="24" required />
+          </label>
+
+          <label>
+            Kategorie
+            <select id="addiction" required></select>
+          </label>
+
+          <label>
+            Foto hochladen
+            <input type="file" id="photo" accept="image/*" required />
+          </label>
+
+          <button type="submit">Eintragen</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Leaderboards</h2>
+        <p class="hint">Jede Person kann pro Foto nur ein einziges Mal voten.</p>
+        <div id="leaderboards" class="leaderboards"></div>
+      </section>
+    </main>
+
+    <template id="photo-entry-template">
+      <article class="entry">
+        <img class="entry-photo" alt="Upload eines Users" />
+        <div class="entry-content">
+          <h4 class="entry-name"></h4>
+          <p class="entry-profile"></p>
+          <p class="entry-score"></p>
+          <div class="entry-actions">
+            <button class="vote-up" type="button">⬆ Upvote</button>
+            <button class="vote-down" type="button">⬇ Downvote</button>
+          </div>
+          <p class="vote-info"></p>
+        </div>
+      </article>
+    </template>
+
+    <script src="script.js"></script>
+  </body>
+</html>

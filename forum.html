@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AddictionRanks Forum</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>AddictionRanks Forum</h1>
+        <p class="subtitle">Simple Diskussionen pro Kategorie.</p>
+        <nav class="nav-links">
+          <a href="index.html">Leaderboard</a>
+          <a href="forum.html" aria-current="page">Forum</a>
+        </nav>
+      </header>
+
+      <section class="card">
+        <h2>Neuer Beitrag</h2>
+        <p class="hint">Du musst eingeloggt sein (Code-Login auf der Hauptseite).</p>
+        <form id="forum-form">
+          <label>
+            Kategorie
+            <select id="forum-category" required></select>
+          </label>
+          <label>
+            Titel
+            <input id="forum-title" maxlength="60" required />
+          </label>
+          <label>
+            Text
+            <textarea id="forum-body" rows="4" maxlength="400" required></textarea>
+          </label>
+          <button type="submit">Posten</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Forum Beiträge</h2>
+        <div id="forum-list" class="leaderboard"></div>
+      </section>
+    </main>
+
+    <script src="forum.js"></script>
+  </body>
+</html>
