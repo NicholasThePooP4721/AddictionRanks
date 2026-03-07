@@ -11,7 +11,9 @@ Das ganze ist mehr dafür da um Menschen bewusst von ihren Süchten zu machen, d
 
 ## Starten
 ```bash
-cd /workspace/AddictionRanks
+cd /Foldershitblahblah/AddictionRanks
+
+Da drinnen dann im cmd (wenn python installiert ist)
 python3 -m http.server 8000
 ```
 
@@ -37,14 +39,7 @@ Was wird kommen?
 - Sortierung nach Score
 - Datenspeicherung im Browser (LocalStorage)
 
-## Starten
-Einfach `index.html` im Browser öffnen oder lokal hosten
 
-
-```bash
-python3 -m http.server 8000
-```
-(Das funktioniert nur im Folder deshalb musst du darein cd machen)
 
 
 ## Jegliches Illegales Material wird strafrechtlich verfolgt.
