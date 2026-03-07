@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 860px;
   margin: 0 auto;
   padding: 1rem;
 }
@@ -73,6 +73,7 @@ input,
 select,
 button,
 textarea {
+button {
   font: inherit;
   padding: 0.6rem;
   border-radius: 8px;
@@ -127,6 +128,7 @@ button:hover {
   display: grid;
   grid-template-columns: 120px 1fr;
   gap: 0.75rem;
+  align-items: start;
 }
 
 .entry-photo {
@@ -140,6 +142,9 @@ button:hover {
 .entry-content h4,
 .entry-content p {
   margin: 0 0 0.35rem;
+.entry-content h3,
+.entry-content p {
+  margin: 0 0 0.4rem;
 }
 
 .entry-actions {
@@ -172,6 +177,12 @@ button:hover {
 }
 
 @media (max-width: 680px) {
+.empty {
+  margin: 0;
+  color: #666;
+}
+
+@media (max-width: 620px) {
   .entry {
     grid-template-columns: 1fr;
   }
