@@ -12,11 +12,6 @@ Simple Webseite mit Login-Code, Upload und mehreren Leaderboards.
 - Einfaches Login-System mit zufälligem Kurzcode
 - Mini-Profil (Anzeigename + kurzer Profiltext)
 - Foto-Uploads pro Kategorie
-- Einmal-Vote-Regel: pro Person nur ein Vote pro Foto
-- Zwei Leaderboards je Kategorie:
-  - Foto-Leaderboard
-  - User-Leaderboard
-- Separates simples Forum auf `forum.html`
 - Browser-Speicherung via LocalStorage
 
 ## Starten
