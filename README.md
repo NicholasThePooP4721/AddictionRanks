@@ -12,10 +12,11 @@ Das ganze ist mehr dafür da um Menschen bewusst von ihren Süchten zu machen, d
 ## Starten
 ```bash
 cd /Foldershitblahblah/AddictionRanks
+```
 
 Da drinnen dann im cmd (wenn python installiert ist)
 python3 -m http.server 8000
-```
+
 
 Danach im Browser öffnen:
 - `http://localhost:8000` (Leaderboard)
