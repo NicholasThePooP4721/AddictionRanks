@@ -1,6 +1,8 @@
 # AddictionRanks
 
+## Kurze Informationen
 Eine Experimentelle Seite welche ich zugegebenermaßen mit KI erstellt habe. 
+Ich habe 0 Ahnung was ich hier tue. Das ganze ist mehr ein Übungsprojekt.
 Work in Progress.
 Derzeit nur in Deutsch.
 Ich bitte jeden der diese Seite benutzen sollte sollte sie tatsächlich rauskommen diese Seite mit Vorsicht zu behandeln.
@@ -10,6 +12,15 @@ Eine super simple Leaderboard-Webseite mit zwei Kategorien:
 - Alkohol
 - Rauchen
 
+## Roadmap
+Was wird kommen?
+-Eine echte Seite mit einer echten Domain und einem echtem Cloudfare und allem echten Zeugs drumherum.
+- 4 unglaubliche Süchte die man grinden kann um der größte Junkie zu werden!
+- English Support
+- Haufenweise Bugs die ich nicht beheben kann da ich keine Ahnung was ich hier tue und nur Ai Slop benutze!
+- Acounts welche mit einem Code anstatt email dich loggen.
+- 5 Euro Premium Lizenz
+- Ein Selbsthilfe/Selbstzerstörungs forum.
 ## Features
 - Username + Foto hochladen
 - Kategorie auswählen
@@ -18,8 +29,17 @@ Eine super simple Leaderboard-Webseite mit zwei Kategorien:
 - Datenspeicherung im Browser (LocalStorage)
 
 ## Starten
-Einfach `index.html` im Browser öffnen oder lokal hosten, z. B.:
+Einfach `index.html` im Browser öffnen oder lokal hosten
+
 
 ```bash
 python3 -m http.server 8000
 ```
+(Das funktioniert nur im Folder deshalb musst du darein cd machen)
+
+
+## Jegliches Illegales Material wird strafrechtlich verfolgt.
+
+
+Ich werde diese Seite down nehmen sollte das ganze eskalieren.
+Wir bitten jede Person die das hier nutzt nichts tatsächlich gefährliches zu nehmen.
