@@ -1,18 +1,13 @@
 # AddictionRanks
 
-Simple Webseite mit Login-Code, Upload und mehreren Leaderboards.
+## Kurze Informationen
+Eine Experimentelle Seite welche ich zugegebenermaßen mit KI erstellt habe. 
+Ich habe 0 Ahnung was ich hier tue. Das ganze ist mehr ein Übungsprojekt.
+Work in Progress.
+Derzeit nur in Deutsch.
+Ich bitte jeden der diese Seite benutzen sollte sollte sie tatsächlich rauskommen diese Seite mit Vorsicht zu behandeln.
+Das ganze ist mehr dafür da um Menschen bewusst von ihren Süchten zu machen, das "hyping" ist zugegebermaßen sicher mies ja aber es ist die beste Möglichkeit um den Menschen dort einen Ort zu geben wo sie ihre Fehler bemerken können checkt ihr?
 
-## Kategorien
-- Alkohol
-- Rauchen
-- Screentime
-- Glücksspiel
-
-## Features
-- Einfaches Login-System mit zufälligem Kurzcode
-- Mini-Profil (Anzeigename + kurzer Profiltext)
-- Foto-Uploads pro Kategorie
-- Browser-Speicherung via LocalStorage
 
 ## Starten
 ```bash
@@ -23,17 +18,8 @@ python3 -m http.server 8000
 Danach im Browser öffnen:
 - `http://localhost:8000` (Leaderboard)
 - `http://localhost:8000/forum.html` (Forum)
-## Kurze Informationen
-Eine Experimentelle Seite welche ich zugegebenermaßen mit KI erstellt habe. 
-Ich habe 0 Ahnung was ich hier tue. Das ganze ist mehr ein Übungsprojekt.
-Work in Progress.
-Derzeit nur in Deutsch.
-Ich bitte jeden der diese Seite benutzen sollte sollte sie tatsächlich rauskommen diese Seite mit Vorsicht zu behandeln.
-Das ganze ist mehr dafür da um Menschen bewusst von ihren Süchten zu machen, das "hyping" ist zugegebermaßen sicher mies ja aber es ist die beste Möglichkeit um den Menschen dort einen Ort zu geben wo sie ihre Fehler bemerken können checkt ihr?
 
-Eine super simple Leaderboard-Webseite mit zwei Kategorien:
-- Alkohol
-- Rauchen
+
 
 ## Roadmap
 Was wird kommen?
