@@ -1,0 +1,124 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f4f4;
+  color: #111;
+}
+
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  margin-top: 0;
+  color: #555;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+label {
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.95rem;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+}
+
+button {
+  cursor: pointer;
+  background: #111;
+  color: #fff;
+  border: 0;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.hint {
+  margin-top: 0;
+  color: #555;
+}
+
+.leaderboard {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.entry {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.75rem;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.entry-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #eee;
+}
+
+.entry-content h3,
+.entry-content p {
+  margin: 0 0 0.4rem;
+}
+
+.entry-actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.entry-actions button {
+  background: #222;
+  padding: 0.45rem 0.6rem;
+}
+
+.empty {
+  margin: 0;
+  color: #666;
+}
+
+@media (max-width: 620px) {
+  .entry {
+    grid-template-columns: 1fr;
+  }
+
+  .entry-photo {
+    width: 100%;
+    height: 220px;
+  }
+}
