@@ -1,6 +1,6 @@
 # AddictionRanks
 
-##Was ist AddictionRanks?
+## Was ist AddictionRanks?
 
 Es gibt genug Apps die dir sagen das du aufhören sollst Alkohol/Zigaretten ect. zu nehmen.
 Wir sind aber Innovateure.
