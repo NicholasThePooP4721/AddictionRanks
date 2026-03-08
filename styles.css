@@ -1,0 +1,203 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f4f4f4;
+  color: #111;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  margin-top: 0;
+  color: #555;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  border: 1px solid #bbb;
+  border-radius: 999px;
+  padding: 0.3rem 0.8rem;
+  color: #222;
+  background: #fff;
+}
+
+.nav-links a[aria-current="page"] {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.inline-form {
+  margin-top: 0.8rem;
+}
+
+label {
+  display: grid;
+  gap: 0.3rem;
+  font-size: 0.95rem;
+}
+
+input,
+select,
+button,
+textarea {
+  font: inherit;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 1px solid #bbb;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.generated-code {
+  margin: 0.6rem 0 0;
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+  background: #111;
+  color: #fff;
+  border: 0;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.hint {
+  margin-top: 0;
+  color: #555;
+}
+
+.leaderboards,
+.leaderboard {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.category-block {
+  border-top: 1px dashed #ccc;
+  padding-top: 0.6rem;
+}
+
+.category-block h3 {
+  margin-bottom: 0.5rem;
+}
+
+.category-block h4 {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+}
+
+.entry {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.75rem;
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 0.75rem;
+}
+
+.entry-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #eee;
+}
+
+.entry-content h4,
+.entry-content p {
+  margin: 0 0 0.35rem;
+}
+
+.entry-actions {
+  display: flex;
+  gap: 0.4rem;
+  margin-bottom: 0.2rem;
+}
+
+.entry-actions button {
+  background: #222;
+  padding: 0.45rem 0.6rem;
+}
+
+.simple-list p,
+.empty {
+  margin: 0.2rem 0;
+  color: #666;
+}
+
+.forum-post {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.75rem;
+  background: #fafafa;
+}
+
+.forum-post h3,
+.forum-post p {
+  margin: 0 0 0.4rem;
+}
+
+.profile-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.75rem;
+  background: #fafafa;
+}
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 8px;
+  object-fit: cover;
+  background: #eee;
+}
+
+@media (max-width: 680px) {
+  .entry {
+    grid-template-columns: 1fr;
+  }
+
+  .entry-photo {
+    width: 100%;
+    height: 220px;
+  }
+}
