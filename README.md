@@ -1,45 +1,50 @@
 # AddictionRanks
 
-Terminal-Style Web-App (schwarzes UI + grüne Schrift) mit Leaderboards, Forum und Profilseiten.
+## Kurze Informationen
+Eine Experimentelle Seite welche ich zugegebenermaßen mit KI erstellt habe. 
+Ich habe 0 Ahnung was ich hier tue. Das ganze ist mehr ein Übungsprojekt.
+Work in Progress.
+Derzeit nur in Deutsch.
+Ich bitte jeden der diese Seite benutzen sollte sollte sie tatsächlich rauskommen diese Seite mit Vorsicht zu behandeln.
+Das ganze ist mehr dafür da um Menschen bewusst von ihren Süchten zu machen, das "hyping" ist zugegebermaßen sicher mies ja aber es ist die beste Möglichkeit um den Menschen dort einen Ort zu geben wo sie ihre Fehler bemerken können checkt ihr?
 
-## Kategorien
-### Leaderboard
-- Alkohol
-- Rauchen
-- Screentime
-- Glücksspiel
-
-### Forum
-- Off topic
-- Videospiele
-- Selbsthilfe
-- Selbstzerstörung
-
-## Features
-- Simples Code-Login
-- Optionale PIN je Code (lokal gehasht mit SHA-256)
-- Profilseiten pro User: `profile.html?code=DEINCODE`
-- Profilbild + Profiltext
-- Forum mit optionalem Bild-Upload pro Beitrag
-- Ein Vote pro User pro Bild
 
 ## Starten
 ```bash
-cd /workspace/AddictionRanks
-python3 -m http.server 8000
+cd /Foldershitblahblah/AddictionRanks
 ```
 
-Dann öffnen:
-- `http://localhost:8000`
-- `http://localhost:8000/forum.html`
-- `http://localhost:8000/profile.html`
+Da drinnen dann im cmd (wenn python installiert ist)
+python3 -m http.server 8000
 
-## Wichtiger Security-Hinweis
-Dieses Projekt ist **rein clientseitig** (LocalStorage, kein Server, keine Datenbank, keine echte Auth-Absicherung).
-Für ein wirklich sicheres Profilsystem brauchst du:
-1. Backend mit echter User-Datenbank
-2. Passwort-Hashing mit Argon2/Bcrypt + Salt
-3. Sessions über HttpOnly Secure Cookies
-4. Rollen-/Rechte-Checks serverseitig
-5. Upload-Validierung + Malware-Scan + Größenlimits
-6. Rate-Limiting + CSRF- und XSS-Schutz
+
+Danach im Browser öffnen:
+- `http://localhost:8000` (Leaderboard)
+- `http://localhost:8000/forum.html` (Forum)
+
+
+
+## Roadmap
+Was wird kommen?
+-Eine echte Seite mit einer echten Domain und einem echtem Cloudfare und allem echten Zeugs drumherum.
+- 4 unglaubliche Süchte die man grinden kann um der größte Junkie zu werden!
+- English Support
+- Haufenweise Bugs die ich nicht beheben kann da ich keine Ahnung was ich hier tue und nur Ai Slop benutze!
+- Acounts welche mit einem Code anstatt email dich loggen.
+- 5 Euro Premium Lizenz
+- Ein Selbsthilfe/Selbstzerstörungs forum.
+## Features
+- Username + Foto hochladen
+- Kategorie auswählen
+- Upvote / Downvote pro Eintrag
+- Sortierung nach Score
+- Datenspeicherung im Browser (LocalStorage)
+
+
+
+
+## Jegliches Illegales Material wird strafrechtlich verfolgt.
+
+
+Ich werde diese Seite down nehmen sollte das ganze eskalieren.
+Wir bitten jede Person die das hier nutzt nichts tatsächlich gefährliches zu nehmen.
