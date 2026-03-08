@@ -1,7 +1,16 @@
 # AddictionRanks
 
+##Was ist AddictionRanks?
+
+Es gibt genug Apps die dir sagen das du aufhören sollst Alkohol/Zigaretten ect. zu nehmen.
+Wir sind aber Innovateure.
+Diese Seite ist da um dich noch tiefer in die sucht stürzen zu lassen!
+Sie hat Gruppenzwang aufgrund des eingebauten Forums, Ein Leaderboard mit den größten junkies und vieles mehr!
+
 ## Kurze Informationen
 Eine Experimentelle Seite welche ich zugegebenermaßen mit KI erstellt habe. 
+
+
 Ich habe 0 Ahnung was ich hier tue. Das ganze ist mehr ein Übungsprojekt.
 Work in Progress.
 Derzeit nur in Deutsch.
