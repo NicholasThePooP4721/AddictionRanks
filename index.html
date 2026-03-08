@@ -3,64 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AddictionRanks</title>
+    <title>AddictionRanks // Leaderboard</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="container">
+    <main class="container terminal">
       <header>
-        <h1>AddictionRanks</h1>
-        <p class="subtitle">Ein simples Leaderboard für Alkohol &amp; Rauchen.</p>
+        <h1>&gt; AddictionRanks</h1>
+        <p class="subtitle">Leaderboard-Konsole (lokal gespeichert)</p>
+        <nav class="nav-links">
+          <a href="index.html" aria-current="page">Leaderboard</a>
+          <a href="forum.html">Forum</a>
+          <a href="profile.html">Profil</a>
+        </nav>
       </header>
 
       <section class="card">
-        <h2>Eintrag hinzufügen</h2>
+        <h2>Login</h2>
+        <p class="hint">Code + PIN (optional) für stabilere lokale Konten.</p>
+        <div id="auth-out">
+          <button type="button" id="generate-code">Code generieren</button>
+          <p id="generated-code" class="mono"></p>
+          <form id="login-form">
+            <label>Code <input id="login-code" maxlength="8" required /></label>
+            <label>Name <input id="login-name" maxlength="24" required /></label>
+            <label>Über dich <input id="login-about" maxlength="80" /></label>
+            <label>PIN (optional) <input id="login-pin" type="password" maxlength="32" /></label>
+            <button type="submit">Login / Account</button>
+          </form>
+        </div>
+        <div id="auth-in" hidden>
+          <p id="session-line"></p>
+          <p><a id="session-profile-link" href="profile.html">Zu meinem Profil</a></p>
+          <button type="button" id="logout">Logout</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Post hinzufügen</h2>
         <form id="entry-form">
-          <label>
-            Username
-            <input type="text" id="username" maxlength="24" required />
-          </label>
-
-          <label>
-            Sucht
-            <select id="addiction" required>
-              <option value="">Bitte wählen</option>
-              <option value="Alkohol">Alkohol</option>
-              <option value="Rauchen">Rauchen</option>
-            </select>
-          </label>
-
-          <label>
-            Foto hochladen
-            <input type="file" id="photo" accept="image/*" required />
-          </label>
-
-          <button type="submit">Eintragen</button>
+          <label>Post-Name <input id="post-name" maxlength="24" required /></label>
+          <label>Kategorie <select id="entry-category" required></select></label>
+          <label>Bild <input id="entry-photo" type="file" accept="image/*" required /></label>
+          <button type="submit">Post speichern</button>
         </form>
       </section>
 
       <section class="card">
-        <h2>Leaderboard</h2>
-        <p class="hint">Upvote = bestätigt echte Addiction. Downvote = eher nicht.</p>
-        <div id="leaderboard" class="leaderboard"></div>
+        <h2>Leaderboards</h2>
+        <p class="hint">Ein User kann pro Bild nur einmal voten.</p>
+        <div id="boards" class="leaderboards"></div>
       </section>
     </main>
 
     <template id="entry-template">
       <article class="entry">
-        <img class="entry-photo" alt="Upload eines Users" />
+        <img class="entry-photo" alt="User Upload" />
         <div class="entry-content">
-          <h3 class="entry-name"></h3>
-          <p class="entry-addiction"></p>
+          <h3 class="entry-title"></h3>
+          <p class="entry-owner"></p>
           <p class="entry-score"></p>
           <div class="entry-actions">
-            <button class="vote-up" type="button">⬆ Upvote</button>
-            <button class="vote-down" type="button">⬇ Downvote</button>
+            <button class="vote-up" type="button">+1</button>
+            <button class="vote-down" type="button">-1</button>
           </div>
+          <p class="vote-info hint"></p>
         </div>
       </article>
     </template>
 
+    <script src="app.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
