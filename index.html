@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AddictionRanks // Leaderboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container terminal">
+      <header>
+        <h1>&gt; AddictionRanks</h1>
+        <p class="subtitle">Leaderboard-Konsole (lokal gespeichert)</p>
+        <nav class="nav-links">
+          <a href="index.html" aria-current="page">Leaderboard</a>
+          <a href="forum.html">Forum</a>
+          <a href="profile.html">Profil</a>
+        </nav>
+      </header>
+
+      <section class="card">
+        <h2>Login</h2>
+        <p class="hint">Nur Code + Name. Einfach halten.</p>
+        <div id="auth-out">
+          <button type="button" id="generate-code">Code generieren</button>
+          <p id="generated-code" class="mono"></p>
+          <form id="login-form">
+            <label>Code <input id="login-code" maxlength="8" required /></label>
+            <label>Name <input id="login-name" maxlength="24" required /></label>
+            <label>Über dich <input id="login-about" maxlength="80" /></label>
+            <button type="submit">Login / Account</button>
+          </form>
+        </div>
+        <div id="auth-in" hidden>
+          <p id="session-line"></p>
+          <p><a id="session-profile-link" href="profile.html">Zu meinem Profil</a></p>
+          <button type="button" id="logout">Logout</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Post hinzufügen</h2>
+        <form id="entry-form">
+          <label>Post-Name <input id="post-name" maxlength="24" required /></label>
+          <label>Kategorie <select id="entry-category" required></select></label>
+          <label>Bild <input id="entry-photo" type="file" accept="image/*" required /></label>
+          <button type="submit">Post speichern</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Leaderboards</h2>
+        <p class="hint">Ein User kann pro Bild nur einmal voten.</p>
+        <div id="boards" class="leaderboards"></div>
+      </section>
+    </main>
+
+    <template id="entry-template">
+      <article class="entry">
+        <img class="entry-photo" alt="User Upload" />
+        <div class="entry-content">
+          <h3 class="entry-title"></h3>
+          <p class="entry-owner"></p>
+          <p class="entry-score"></p>
+          <div class="entry-actions">
+            <button class="vote-up" type="button">+1</button>
+            <button class="vote-down" type="button">-1</button>
+          </div>
+          <p class="vote-info hint"></p>
+        </div>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AddictionRanks // Profil</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container terminal">
+      <header>
+        <h1>&gt; Profil</h1>
+        <p class="subtitle">Öffentliches Profil + eigenes Edit</p>
+        <nav class="nav-links">
+          <a href="index.html">Leaderboard</a>
+          <a href="forum.html">Forum</a>
+          <a href="profile.html" aria-current="page">Profil</a>
+        </nav>
+      </header>
+
+      <section class="card">
+        <h2>Profil ansehen</h2>
+        <p class="hint">URL: <span class="mono">profile.html?code=DEINCODE</span></p>
+        <div id="profile-view"></div>
+      </section>
+
+      <section class="card">
+        <h2>Alle Profile</h2>
+        <div id="profiles-grid" class="profiles-grid"></div>
+      </section>
+
+      <section class="card">
+        <h2>Eigenes Profil bearbeiten</h2>
+        <p id="edit-hint" class="hint"></p>
+        <form id="profile-form">
+          <label>Name <input id="edit-name" maxlength="24" required /></label>
+          <label>Über dich <input id="edit-about" maxlength="80" /></label>
+          <label>Neues Profilbild <input id="edit-photo" type="file" accept="image/*" /></label>
+          <button type="submit">Speichern</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+    <script src="profile.js"></script>
+  </body>
+</html>
