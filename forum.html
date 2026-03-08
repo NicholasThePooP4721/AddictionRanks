@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AddictionRanks // Forum</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container terminal">
+      <header>
+        <h1>&gt; Forum</h1>
+        <p class="subtitle">Diskussion + Bilder</p>
+        <nav class="nav-links">
+          <a href="index.html">Leaderboard</a>
+          <a href="forum.html" aria-current="page">Forum</a>
+          <a href="profile.html">Profil</a>
+        </nav>
+      </header>
+
+      <section class="card">
+        <h2>Forum Login</h2>
+        <p id="forum-auth-state" class="hint"></p>
+        <form id="forum-login-form">
+          <label>Code <input id="forum-code" maxlength="8" required /></label>
+          <label>Name <input id="forum-name" maxlength="24" required /></label>
+          <label>PIN (falls gesetzt) <input id="forum-pin" type="password" maxlength="32" /></label>
+          <button type="submit">Login</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Neuer Beitrag</h2>
+        <form id="forum-form">
+          <label>Kategorie <select id="forum-category" required></select></label>
+          <label>Titel <input id="forum-title" maxlength="70" required /></label>
+          <label>Text <textarea id="forum-body" rows="4" maxlength="500" required></textarea></label>
+          <label>Bild (optional) <input id="forum-image" type="file" accept="image/*" /></label>
+          <button type="submit">Posten</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Beiträge</h2>
+        <div id="forum-list" class="leaderboard"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+    <script src="forum.js"></script>
+  </body>
+</html>
